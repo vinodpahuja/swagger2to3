@@ -1,0 +1,402 @@
+<html>
+<head>
+<style>
+body {
+	background-color: #fff;
+	font-family: Raleway, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.parent {
+	width: 400px;
+	float: left;
+	margin: 0 10px;
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+	width: 50%;
+}
+
+table div {
+	border: 2px solid #0086c8;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10px;
+	color: #0088cb;
+	font-size: 14px;
+}
+
+table div:first-child {
+	margin-top: 0;
+}
+
+table td {
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+hr {
+	width: calc(100% + 20px);
+	margin-left: -10px;
+	border: 0 none;
+	height: 1px;
+	background: #0088cb;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.blue {
+	color: #0086c8;
+	border-color: #0086c8;
+}
+
+.blue hr {
+	background: #0086c8;
+}
+
+.blue.hover {
+	background: #0086c8;
+	color: #fff;
+}
+
+.blue.hover hr {
+	background: #fff;
+}
+
+.blue.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.green {
+	color: #6a9656;
+	border-color: #6a9656;
+}
+
+.green hr {
+	background: #6a9656;
+}
+
+.green.hover {
+	background: #6a9656;
+	color: #fff;
+}
+
+.green.hover hr {
+	background: #fff;
+}
+
+.green.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.orange {
+	color: #d68051;
+	border-color: #d68051;
+}
+
+.orange hr {
+	background: #d68051;
+}
+
+.orange.hover {
+	background: #d68051;
+	color: #fff;
+}
+
+.orange.hover hr {
+	background: #fff;
+}
+
+.orange.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.gray {
+	color: #b773c7;
+	border-color: #b773c7;
+}
+
+.gray hr {
+	background: #b773c7;
+}
+
+.gray.hover {
+	background: #b773c7;
+	color: #fff;
+}
+
+.gray.hover hr {
+	background: #fff;
+}
+
+.gray.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.gray {
+	color: #967596;
+	border-color: #967596;
+}
+
+.gray hr {
+	background: #967596;
+}
+
+.gray.hover {
+	background: #967596;
+	color: #fff;
+}
+
+.gray.hover hr {
+	background: #fff;
+}
+
+.gray.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.red {
+	color: #d65b60;
+	border-color: #d65b60;
+}
+
+.red hr {
+	background: #d65b60;
+}
+
+.red.hover {
+	background: #d65b60;
+	color: #fff;
+}
+
+.red.hover hr {
+	background: #fff;
+}
+
+.red.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.yellow {
+	color: #d6a914;
+	border-color: #d6a914;
+}
+
+.yellow hr {
+	background: #d6a914;
+}
+
+.yellow.hover {
+	background: #d6a914;
+	color: #fff;
+}
+
+.yellow.hover hr {
+	background: #fff;
+}
+
+.yellow.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.teal {
+	color: #50bf8d;
+	border-color: #50bf8d;
+}
+
+.teal hr {
+	background: #50bf8d;
+}
+
+.teal.hover {
+	background: #50bf8d;
+	color: #fff;
+}
+
+.teal.hover hr {
+	background: #fff;
+}
+
+.teal.hover .component {
+	border-color: #fff;
+	color: #fff;
+}
+
+.big {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.small {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.components {
+	overflow: hidden;
+	margin-top: 8px;
+}
+
+.component {
+	padding: 5px;
+	width: calc(33% - 6px);
+	float: left;
+	margin: 10px 3px 0 3px !important;
+	border: 1px solid #b773c7;
+	color: #b773c7;
+	font-size: 11px;
+}
+
+h1 {
+	font-size: 16px;
+	text-align: center;
+	color: #333;
+}
+</style>
+</head>
+<body style="">
+	<div class="parent">
+		<h1>Swagger 2</h1>
+		<table cellspacing="0" cellpadding="5">
+			<tbody>
+				<tr>
+					<td colspan="2">
+						<div class="blue big">info</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="green small">
+							host
+							<hr>
+							basePath
+							<hr>
+							schemes
+						</div>
+					</td>
+					<td>
+						<div class="orange">security</div>
+						<div class="gray">securityDefinitions</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="gray small">produces</div>
+					</td>
+					<td>
+						<div class="gray small">consumes</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="yellow big">paths</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="red">tags</div>
+					</td>
+					<td>
+						<div class="teal">externalDocs</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="gray small">
+							definitions
+							<hr>
+							parameters
+							<hr>
+							responses
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="parent right">
+		<h1>OpenAPI 3</h1>
+		<table cellspacing="0" cellpadding="5">
+			<tbody>
+				<tr>
+					<td colspan="2">
+						<div class="blue big">info</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="green big">servers</div>
+					</td>
+					<td>
+						<div class="orange big">security</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="yellow big">paths</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="red">tags</div>
+					</td>
+					<td>
+						<div class="teal">externalDocs</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="gray big">
+							components
+							<section class="components">
+
+								<div class="component">responses</div>
+								<div class="component">parameters</div>
+								<div class="component">examples</div>
+								<div class="component">requestBodies</div>
+								<div class="component">headers</div>
+								<div class="component">links</div>
+								<div class="component">callbacks</div>
+								<div class="component">schemas</div>
+								<div class="component">securitySchemes</div>
+							</section>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		var t = [ 'blue', 'green', 'orange', 'gray', 'purple', 'red', 'yellow',
+				'teal' ];
+		$(t).each(function(i, color) {
+			$('.' + color).hover(function() {
+				$('.' + color).addClass('hover')
+			}, function() {
+				$('.' + color).removeClass('hover')
+			});
+		})
+	</script>
+</body>
+</html>
